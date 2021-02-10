@@ -1,0 +1,146 @@
+
+
+.menu{
+  font-size: 1.33rem;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: $primaryColor;
+  color:#fff;
+  height:100%;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 1;
+  transform: translateX(-100%);
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+  z-index:20;
+
+  &--active{
+    transform: translateX(0);
+  }
+  
+
+  
+  &__list{
+    padding-top:50px;
+    list-style-type:none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    
+  
+
+  }
+
+  &__item{
+    margin:1rem 0;
+    order:1;
+
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  &__social{
+
+    margin-top: auto;
+    order:2;
+  }
+
+  .social__link::before{
+    transform: translateY(0);
+  }
+
+}
+
+@media(min-width: 1000px) {
+  .menu{
+      position: relative;
+    background-color:#fff;
+    color:$primaryColor;
+    width: auto;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    height: $menuHeight;
+    margin-top: $menuHeight;
+    opacity: 1;
+      transform:none;
+      transition:none;
+    @include maxSiteWidth;
+
+
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      height: 100%;
+        padding-top:0;
+    }
+
+    &__item{
+      margin:0;
+      height: 100%;
+      position: relative;
+      z-index: 21;
+      flex: auto;
+      overflow: hidden;
+
+    }
+
+  
+    &__item:not(&__item:last-child){
+      border-right: 4px solid $primaryColor;
+    }
+
+
+   
+
+    &__item:not(.menu__social)::before {
+      @include fullSizePseudoelement;
+      @include pseudoelementHover;
+      z-index: -1;
+
+      background-color: $primaryColor;
+    }
+    
+    &__item:hover::before{
+      transform: scaleY(1);
+      
+    }
+
+    &__item:not(.menu__social):hover{
+      transition: color 200ms 50ms linear;
+      color:#fff;
+       z-index: 21;
+    }
+
+    &__link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      z-index: 20;
+    }
+
+    &__social {
+      order: 1;
+      flex: auto;
+    }
+
+    .social__link::before{
+      transform: translateY(-100%);
+    }
+
+
+
+
+
+
+  }
+
+}

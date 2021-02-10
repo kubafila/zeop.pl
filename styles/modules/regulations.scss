@@ -1,0 +1,30 @@
+.regulations{
+  &__header {
+    margin-top: 100px;
+  }
+
+  &__link{
+      display: block;
+
+      padding: 16px;
+
+      transition-delay: 50ms;
+      transition-duration: 500ms;
+      transition-property: background-color color;
+      transform-origin: ease-in-out;
+      text-align: center;
+      text-decoration: none;
+
+      color: $primaryColor;
+      border: 2px solid $primaryColor;
+      border-radius: 10px;
+
+      font-size: 1rem;
+    }
+
+    &__link:hover {
+      color: #ffffff;
+      background-color: $primaryColor;
+    
+  }
+}

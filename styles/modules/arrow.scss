@@ -1,0 +1,45 @@
+.arrow {
+
+  @include backgroundImage("../images/arrow.png");
+  position: fixed;
+  height: 75px;
+  width: 75px;
+
+  z-index: 22;
+
+  transform: translateX(calc(-50vw + 50%)) translateY(0) rotate(180deg) scale(1);
+
+  transition-property: transform, opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+  right: 0px;
+  bottom: 100px;
+  opacity: 1;
+
+  &--up {
+    transform: scale(0.5) translateX(0px) translateY(200px) rotate(0deg);
+    opacity: 0.2;
+  }
+
+
+}
+
+
+
+@media (min-width: 1000px) {
+
+  .arrow {
+
+    height: 100px;
+    width: 100px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+
+
+}

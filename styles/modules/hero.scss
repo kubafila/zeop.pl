@@ -1,0 +1,6 @@
+.hero{
+  margin-top: 0;
+  height: calc(100vh - #{$menuHeight * 2});
+
+  @include backgroundImage("../images/logo.svg")
+}

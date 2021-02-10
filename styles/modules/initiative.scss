@@ -1,0 +1,94 @@
+.initiative{
+
+  margin: 20px;
+  // border:3px solid goldenrod;
+
+
+  display: grid;
+  align-items: start;
+
+  margin-bottom: 2rem;
+
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  justify-items: start;
+  grid-gap: 1.2rem;
+
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__image {
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 30vw;
+    max-height: 200px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    &::before{
+      @include  fullSizePseudoelement;
+      @include center;
+      content: "Zobacz więcej";
+      font-size: 1.5em;
+      background-color: $primaryColor;
+      color:#fff;
+      opacity: 0;
+      transition: opacity 250ms 50ms ease-in-out;
+    }
+    &:hover::before{
+      opacity: 1;
+    }
+
+    &--org {
+      background-image: url('../images/org.png');
+    }
+
+    &--blog {
+      background-image: url('../images/blog.png');
+      background-position: center top;
+    }
+
+    &--edu {
+      background-image: url('../images/enedu.png');
+    }
+
+    &--reports {
+      background-image: url('../images/reports.png');
+    }
+  }
+}
+
+
+@media (min-width: 1000px){
+  .initiative {
+    
+    
+    max-width: 100%;
+    max-height: 100%;
+    grid-template-columns: 4fr 7fr;
+    grid-template-rows: auto auto;
+  }
+
+  .initiative__image {
+    display: block;
+    max-width: 30vw;
+    
+    height: 20vw;
+    grid-column: 1/ span 1;
+    grid-row: 1/3;
+  }
+
+}

@@ -1,0 +1,59 @@
+.social {
+  display: flex;
+  justify-content: space-evenly;
+
+  &__link {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
+
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &::before {
+      @include fullSizePseudoelement;
+      @include pseudoelementHover;
+    }
+
+    &:hover::before {
+      @include fullSizePseudoelement;
+      transform: translateY(0);
+    }
+
+    &--facebook {
+      @include backgroundImage("../images/facebook-empty.png");
+
+      &::before {
+        @include backgroundImage("../images/facebook.png");
+      }
+    }
+
+    &--instagram {
+      @include backgroundImage("../images/instagram-empty.png");
+
+      &::before {
+        @include backgroundImage("../images/instagram.png");
+      }
+    }
+
+    &--twitter {
+      @include backgroundImage("../images/twitter-empty.png");
+
+      &::before {
+        @include backgroundImage("../images/twitter.png");
+      }
+    }
+
+    &--linkedin {
+      @include backgroundImage("../images/linkedin-empty.png");
+
+      &::before {
+        @include backgroundImage("../images/linkedin.png")
+      }
+    }
+  }
+
+}

@@ -1,0 +1,17 @@
+{
+  "name": "zeop.pl",
+  "version": "1.0.0",
+  "description": "Official zeop.pl webpage.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "parcel index.html --out-dir dev --open",
+    "build": "parcel build index.html --public-url ./ --out-dir build"
+  },
+  "author": "kubafila",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.32.6",
+    "parcel-bundler": "^1.12.4"
+  }
+}

@@ -1,0 +1,33 @@
+.footer {
+  @include maxSiteWidth;
+  margin: 500px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__text {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  &__split {
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media (min-width:1000px) {
+  .footer {
+    flex-direction: row;
+  
+    &__split {
+      margin-bottom: 0;
+    }
+  }
+
+
+}
