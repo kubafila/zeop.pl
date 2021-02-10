@@ -2,8 +2,6 @@
 ![screenshot](images/screenshot.png)
 
 ## Table of contents
-- [Zeop.pl website](#zeoppl-website)
-  - [Table of contents](#table-of-contents)
   - [General info](#general-info)
   - [Technologies](#technologies)
   - [Design](#design)
@@ -11,7 +9,7 @@
   - [Live](#live)
 
 ## General info
-Website for student organisation "Z energią o prawie".  
+Website for student organization "Z energią o prawie".  
 	
 ## Technologies
 Project is created with:

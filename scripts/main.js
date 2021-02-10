@@ -1,6 +1,8 @@
 
   const arrow = document.querySelector(".arrow");
   const hamburger = document.querySelector(".hamburger");
+
+  const menuLinks = document.querySelectorAll(".menu__link");
   const menu = document.querySelector(".menu");
 
   const changeArrowDirection = () => {
@@ -23,5 +25,7 @@
 document.addEventListener('scroll', changeArrowDirection)
 
 hamburger.addEventListener('click', toggleMenu)
+
+menuLinks.forEach(link => link.addEventListener('click', toggleMenu));
 
 
