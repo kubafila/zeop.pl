@@ -78,6 +78,10 @@
       pointer-events: auto;
     }
 
+    &__text{
+        align-self: end;
+    }
+
     &:hover .initiative__image::before {
       opacity: 1;
     }
