@@ -3,4 +3,7 @@
   height: calc(100vh - #{$menuHeight * 2});
 
   @include backgroundImage("../images/logo.svg")
+
+  @media (min-width:1000px)
 }
+
