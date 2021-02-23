@@ -39,6 +39,7 @@
     background-size: cover;
     position: relative;
     pointer-events: auto;
+    background-image: url(https://via.placeholder.com/700x400.png?text=Zdj%C4%99cie+zast%C4%99pcze);
 
     &::before{
       @include  fullSizePseudoelement;
