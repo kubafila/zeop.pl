@@ -1,0 +1,41 @@
+.excerpt {
+  max-height: 100px;
+  overflow: hidden;
+  position: relative;
+  transition: height 1s ease;
+
+
+  transform-origin: top center;
+
+  &::before {
+      pointer-events:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 600ms ease-in-out;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+
+  &--expanded {
+    transform: scaleY(1);
+    max-height: 100%;
+
+    &::before {
+      opacity: 0;
+    
+    }
+  }
+}
+.excerpt-button-wrapper{
+  width:100%;
+  text-align:center;
+}
+.excerpt-button {
+  @include button;
+  display:inline-block;
+  margin: 0 auto;
+}

@@ -1,6 +1,6 @@
 .social {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 
   &__link {
     height: 50px;
@@ -56,4 +56,10 @@
     }
   }
 
+}
+
+@media (min-width:992px){
+  .social{
+    justify-content: space-evenly;
+  }
 }

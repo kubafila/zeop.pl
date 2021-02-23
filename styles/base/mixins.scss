@@ -34,3 +34,31 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin button {
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+
+  padding: 16px;
+
+  transition-delay: 50ms;
+  transition-duration: 500ms;
+  transition-property: background-color color;
+  transform-origin: ease-in-out;
+  text-align: center;
+  text-decoration: none;
+
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
+  border-radius: 10px;
+
+  font-size: 1rem;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $primaryColor;
+
+  }
+  
+}

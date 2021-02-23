@@ -6,15 +6,17 @@
 
 
 // MODULES
+@import "modules/hamburger";
+@import "modules/top-bar";
+@import "modules/social";
 @import "modules/menu";
 @import "modules/hero";
-@import "modules/about";
+@import "modules/arrow";
+@import "modules/management";
+@import "modules/excerpt";
 @import "modules/regulations";
 @import "modules/initiative";
 @import "modules/partners";
 @import "modules/contact";
+@import "modules/newsletter";
 @import "modules/footer";
-@import "modules/arrow";
-@import "modules/social";
-@import "modules/hamburger";
-@import "modules/top-bar"

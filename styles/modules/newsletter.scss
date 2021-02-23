@@ -1,0 +1,101 @@
+.newsletter {
+  margin-top: 100px;
+
+
+
+  &__email-wrapper {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__email {
+    padding: 0 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: $primaryColor;
+    border: 2px solid $primaryColor;
+    border-radius: 10px;
+    font-family: lato;
+    font-size: 1.1em;
+    font-weight: 100;
+
+
+  }
+
+
+  &__label {
+    display: block;
+  }
+
+  &__label-email {
+  
+
+    margin-top: 40px;
+
+  }
+
+
+
+  
+  &__label-checkbox {
+    margin-top: 1.5rem;
+    font-size: 0.8em;
+    clear: both;
+    
+  }
+
+  &__checkbox {
+    transform: translate(50%,100%) scale(2.2);
+    margin:0 25px 20px 0;
+    float: left;
+    
+  }
+
+
+  &__button {
+
+    @include button;
+    background-color: $primaryColor;
+    font-weight: 700;
+    font-size: 1.1em;
+    
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    margin: 1rem auto 0 auto ;
+    text-transform: uppercase;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (min-width:992px){
+  .newsletter{
+
+    &__email-wrapper{
+      flex-direction: row;
+    }
+    &__email{
+      width: 50%;
+    }
+
+    &__label-email{
+      font-size: 1em;
+    }
+
+    &__button{
+      width: auto;
+      margin: 0;
+      margin-left: 2rem;
+    }
+  }
+}
