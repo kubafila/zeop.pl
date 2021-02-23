@@ -1,9 +1,15 @@
 .hero{
   margin-top: 0;
   height: calc(100vh - #{$menuHeight * 2});
+  min-height: 500px;
 
-  @include backgroundImage("../images/logo.svg")
+  @include backgroundImage("../images/logo-mobile.svg");
+  // background-size:contain ;
 
-  @media (min-width:1000px)
+  @media (min-width:768px){
+   
+    @include backgroundImage("../images/logo-desktop.svg");
+    
+  }
 }
 
