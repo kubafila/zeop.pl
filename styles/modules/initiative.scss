@@ -18,11 +18,12 @@
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 
 
-  &__heading {
-    margin: 0;
-  }
+  //I want hover only on image and heading - https://stackoverflow.com/a/30104683
+  pointer-events: none;  
+
 
   &__image {
     display: block;
@@ -37,6 +38,7 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+    pointer-events: auto;
 
     &::before{
       @include  fullSizePseudoelement;
@@ -47,6 +49,7 @@
       color:#fff;
       opacity: 0;
       transition: opacity 250ms 50ms ease-in-out;
+    
     }
     &:hover::before{
       opacity: 1;
@@ -69,10 +72,22 @@
       background-image: url('../images/reports.png');
     }
   }
+
+    &__heading {
+      margin: 0;
+      pointer-events: auto;
+    }
+
+    &:hover .initiative__image::before {
+      opacity: 1;
+    }
+
+
+
 }
 
 
-@media (min-width: 992px){
+@media (min-width: 1000px){
   .initiative {
     
     
