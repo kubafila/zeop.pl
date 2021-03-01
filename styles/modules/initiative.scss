@@ -54,22 +54,37 @@
       opacity: 1;
     }
 
-    &--org {
-      background-image: url('../images/org.png');
+    
+    &--{
+
     }
 
-    &--blog {
-      background-image: url('../images/blog.png');
-      background-position: center top;
+    &--summaries{
+      background-image: url('../images/summaries.png');
     }
-
-    &--edu {
+    &--expert{
+      background-image: url('../images/expert.png');
+    }
+    &--debates {
+      background-image: url('../images/debates.png');
+    }
+    &--power {
+      background-image: url('../images/power.png');
+    }
+    &--enedu {
       background-image: url('../images/enedu.png');
     }
-
+    &--conference {
+      background-image: url('../images/conference.png');
+    }
     &--reports {
       background-image: url('../images/reports.png');
     }
+    &--support {
+      background-image: url('../images/support.png');
+    }
+
+    
   }
 
     &__heading {
