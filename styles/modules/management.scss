@@ -1,0 +1,48 @@
+.management{
+
+  &__list{
+ 
+
+    list-style-type: none;
+    margin-top: 2rem;
+    width:100%;
+    
+    &-item{
+        margin-top: 1rem;
+  
+      text-align: center;
+      
+    }
+  }
+
+
+  &__subheading{
+    margin-top: 3rem;
+    text-align: center;
+  }
+}
+
+.LI-profile-badge{
+    margin: 0 auto;
+
+  // height: 300px;
+  // width: 220px;
+  // background-color: rgba(0,0,0,0.2);
+}
+
+
+ @media(min-width:992px) {
+  .management{
+
+    &__list{
+      
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;    
+    
+      
+
+      
+    }
+  }
+ }

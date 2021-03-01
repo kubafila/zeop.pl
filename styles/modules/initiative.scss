@@ -1,8 +1,6 @@
 .initiative{
 
   margin: 20px;
-  // border:3px solid goldenrod;
-
 
   display: grid;
   align-items: start;
@@ -18,11 +16,12 @@
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 
 
-  &__heading {
-    margin: 0;
-  }
+  //I want hover only on image and heading - https://stackoverflow.com/a/30104683
+  pointer-events: none;  
+
 
   &__image {
     display: block;
@@ -37,6 +36,8 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+    pointer-events: auto;
+    background-image: url(https://via.placeholder.com/700x400.png?text=Zdj%C4%99cie+zast%C4%99pcze);
 
     &::before{
       @include  fullSizePseudoelement;
@@ -47,32 +48,69 @@
       color:#fff;
       opacity: 0;
       transition: opacity 250ms 50ms ease-in-out;
+    
     }
     &:hover::before{
       opacity: 1;
     }
 
-    &--org {
-      background-image: url('../images/org.png');
+    
+    &--{
+
     }
 
-    &--blog {
-      background-image: url('../images/blog.png');
-      background-position: center top;
+    &--summaries{
+      background-image: url('../images/summaries.png');
     }
-
-    &--edu {
+    &--expert{
+      background-image: url('../images/expert.png');
+    }
+    &--debates {
+      background-image: url('../images/debates.png');
+    }
+    &--power {
+      background-image: url('../images/power.png');
+    }
+    &--enedu {
       background-image: url('../images/enedu.png');
     }
-
+    &--conference {
+      background-image: url('../images/conference.png');
+    }
     &--reports {
       background-image: url('../images/reports.png');
     }
+    &--support {
+      background-image: url('../images/support.png');
+    }
+
+    
   }
+
+    &__heading {
+      margin: 0;
+      pointer-events: auto;
+    }
+
+    &__text{
+        align-self: end;
+    }
+
+    &:hover .initiative__image::before {
+      opacity: 1;
+    }
+
+
+
 }
 
 
 @media (min-width: 1000px){
+  .initiatives-title{
+    font-size:2.5rem;
+    width:36%;
+  }
+
   .initiative {
     
     
