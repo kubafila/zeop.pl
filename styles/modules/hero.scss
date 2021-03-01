@@ -4,11 +4,14 @@
   min-height: 500px;
 
   @include backgroundImage("../images/logo-mobile.svg");
-  // background-size:contain ;
+  background-size: 100%;
 
   @media (min-width:768px){
-   
+    
     @include backgroundImage("../images/logo-desktop.svg");
+    background-size:contain ;
+     background-origin: content-box;
+     padding:50px;
     
   }
 }
