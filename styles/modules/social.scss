@@ -18,40 +18,41 @@
       @include pseudoelementHover;
     }
 
+
     &:hover::before {
       @include fullSizePseudoelement;
       transform: translateY(0);
     }
 
     &--facebook {
-      @include backgroundImage("../images/facebook-empty.png");
+      @include backgroundImage("../images/social/facebook-empty.png");
 
       &::before {
-        @include backgroundImage("../images/facebook.png");
+        @include backgroundImage("../images/social/facebook.png");
       }
     }
 
     &--instagram {
-      @include backgroundImage("../images/instagram-empty.png");
+      @include backgroundImage("../images/social/instagram-empty.png");
 
       &::before {
-        @include backgroundImage("../images/instagram.png");
+        @include backgroundImage("../images/social/instagram.png");
       }
     }
 
     &--twitter {
-      @include backgroundImage("../images/twitter-empty.png");
+      @include backgroundImage("../images/social/twitter-empty.png");
 
       &::before {
-        @include backgroundImage("../images/twitter.png");
+        @include backgroundImage("../images/social/twitter.png");
       }
     }
 
     &--linkedin {
-      @include backgroundImage("../images/linkedin-empty.png");
+      @include backgroundImage("../images/social/linkedin-empty.png");
 
       &::before {
-        @include backgroundImage("../images/linkedin.png")
+        @include backgroundImage("../images/social/linkedin.png")
       }
     }
   }

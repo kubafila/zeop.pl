@@ -1,0 +1,63 @@
+.profile {
+  width: 250px;
+  height: 450px;
+  margin: 0 20px;
+  
+
+  border: 2px solid $primaryColor;
+  background-color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+
+
+  &__top {
+    position: relative;
+    flex: 0 0 30%;
+  }
+
+  &__bottom {
+    flex: 1;
+
+    color:#fff;
+    padding: 0 20px;
+    padding-top: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  &__name {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  &__link{
+    
+    @include button;
+
+    color: #fff;
+    border-color: #fff;
+    margin: auto 30px 25px 30px;
+
+
+    &:hover{
+      background-color: #fff;
+      color: $primaryColor;
+    }
+  }
+}
