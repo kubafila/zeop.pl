@@ -2,8 +2,4 @@
 /node_modules
 /dev
 /build
-build/index.html
-<<<<<<< HEAD
 .htaccess
-=======
->>>>>>> 79fd3fbe776b587af372fb5b6466bc91fe69a85e
