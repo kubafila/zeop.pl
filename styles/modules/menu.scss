@@ -135,6 +135,9 @@
     .social__link::before{
       transform: translateY(-100%);
     }
+    .social__link:hover::before{
+      transform: translateY(0);
+    }
 
 
 

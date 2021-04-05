@@ -37,7 +37,6 @@
     background-size: cover;
     position: relative;
     pointer-events: auto;
-    background-image: url(https://via.placeholder.com/700x400.png?text=Zdj%C4%99cie+zast%C4%99pcze);
 
     &::before{
       @include  fullSizePseudoelement;
@@ -52,31 +51,31 @@
     }
     &:hover::before{
       opacity: 1;
-    }
+   }
 
     &--summaries{
-      background-image: url('../images/summaries.png');
+      background-image: url('../images/initiatives/summaries.png');
     }
     &--expert{
-      background-image: url('../images/expert.png');
+      background-image: url('../images/initiatives/expert.png');
     }
     &--debates {
-      background-image: url('../images/debates.png');
+      background-image: url('../images/initiatives/debates.png');
     }
     &--power {
-      background-image: url('../images/power.png');
+      background-image: url('../images/initiatives/power.png');
     }
     &--enedu {
-      background-image: url('../images/enedu.png');
+      background-image: url('../images/initiatives/enedu.png');
     }
     &--conference {
-      background-image: url('../images/conference.png');
+      background-image: url('../images/initiatives/conference.png');
     }
     &--reports {
-      background-image: url('../images/reports.png');
+      background-image: url('../images/initiatives/reports.png');
     }
     &--support {
-      background-image: url('../images/support.png');
+      background-image: url('../images/initiatives/support.png');
     }
 
     
